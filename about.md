@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Hi, this is a weblog about my professional history and interests.
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+My name is Gabriele Penazzi, an electronic engineer as education
+and a scientific software developer as job and passion.
+I am working as postdoc in the Bremen Center for Computational Materials
+Science. You can give a look to my research on
+[Google Scholar](http://scholar.google.de/citations?hl=de&user=4CCZ3ecAAAAJ)
+or [ResearchGate](https://www.researchgate.net/profile/Gabriele_Penazzi2/).
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+I enjoy device physics, quantum transport, coding in Python, C++ and Fortran
+and possibly run code on large parallel machines.

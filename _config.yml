@@ -9,7 +9,7 @@
 title: Gabriele Penazzi
 email: g.penazzi@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Just the personal work blog of Gabriele Penazzi.
+  An essential guide to the author.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://gpenazzi.github.io" # the base hostname & protocol for your site
 
