@@ -6,8 +6,8 @@ permalink: /resume/
 
 You can download my resume in diffeernt formats:
 
-[Extended academic CV]({{ site.url }}/download/extended.pdf)  
+[Extended academic CV](https://dl.dropboxusercontent.com/u/9206107/extended.pdf)  
 
-[Compact academic CV]({{ site.url }}/download/compact.pdf)  
+[Compact academic CV](https://dl.dropboxusercontent.com/u/9206107/compact.pdf)  
 
-[Industry CV]({{ site.url }}/download/industry.pdf)
+[Industry CV](https://dl.dropboxusercontent.com/u/9206107/industry.pdf)
