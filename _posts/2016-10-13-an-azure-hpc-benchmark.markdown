@@ -17,7 +17,7 @@ I am just publishing the results.
 I have tried to run a DFTB+ benchmark. DFTB+ is an academic Fortran
 implementation of the Density Functional Tight Binding, an approximate quantum
 mechanics method widely used in solid state physics and quantum chemistry.
-Find it on <www.dftb-plus.info>.
+Find it on <http://www.dftb-plus.info>.
 The number crunching kernel of the code is a a complex generalized eigenvalue
 problem solved through the SCALAPACK parallel library.
 Note that I could not ensure full consistency in the compilation on different
@@ -27,7 +27,7 @@ with default optimization and the scalapack from the Intel mkl 11.2.
 
 The benchmark is a self consistent calculation of a large supercell of
 Silicon Carbide (SiC). For comparison, I got some data run on the Hannover
-supercomputer (details on <http://www,hlrn.de>). At 2015 the Cray system at HLRN
+supercomputer (details on <http://www.hlrn.de>). At 2015 the Cray system at HLRN
  was ranked 83 in the world, according to http://www.top500.org. This benchmark
   was kindly provided by Balint Aradi.
 
