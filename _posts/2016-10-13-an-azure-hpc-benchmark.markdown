@@ -31,7 +31,7 @@ supercomputer (details on <http://www,hlrn.de>). At 2015 the Cray system at HLRN
  was ranked 83 in the world, according to http://www.top500.org. This benchmark
   was kindly provided by Balint Aradi.
 
-![DFTB on HLRN scaling]({{ site.url }}/resources/images/dftbscaling1.png)
+![DFTB on HLRN scaling]({{ site.github.url }}/resources/images/dftbscaling1.png)
 
 The XC30 is the Cray system. The ICE1 is an old cluster and it is significantly
 slower. I could not retrieve the exact input file used for the figures above nor
@@ -46,7 +46,7 @@ years old Intel Xeon system with 40 Gb/s Infiniband interconnects, the cluster
 performance is comparable with the ICE1 in Hannover. In the figure below the
 results for Azure (using the Infiniband instances) and for our cluster.
 
-![DFTB on Azure scaling]({{ site.url }}/resources/images/azure_bench.png)
+![DFTB on Azure scaling]({{ site.github.url }}/resources/images/azure_bench.png)
 
 As you see I could benchmark up to 128 cores. The scaling is not bad, from the
 Cray calculation we do not expect ideal scaling beyond 96 cores for the 4000
