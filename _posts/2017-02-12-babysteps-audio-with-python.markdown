@@ -108,10 +108,10 @@ pa.terminate()
 This approach for the signal generation is very simple, but inefficient as well. Whenever
 we want to generate a signal, we have to build the whole numpy array. In general this is not
 really what we want to do, if want a very long oscillator sound we could rather generate small
-chunk of data and feed them to pyAudio through a callback function. To get into the mood, I
-reimplemented the same oscillator as an iterator which returns chunk of data till an arbitrary
-stop condition is set. I still did not get to the callback part, therefore this iterator is
-(quite stupidly) called with an interface which still assemble a large numpy array.
+chunk of data and feed them to pyAudio indefinitely. A good starting point is to
+reimplement the same oscillator as an iterator which returns chunk of data till an arbitrary
+stop condition is set. Here below is a basic implementation. At first we can use the iterator to
+generate the same array we had befor, and play it.
 
 {% highlight python %}
 import pyaudio
@@ -123,7 +123,7 @@ BUFFERSIZE = 1024
 class SinOsc(object):
 
     def __init__(self, frequency, amplitude=1.0):
-        self._t = 0.0
+        self._t = 0
         self._stop = False
         self._amplitude = amplitude
         self._frame_frequency = frequency / BITRATE
@@ -131,7 +131,7 @@ class SinOsc(object):
         self._chunk = numpy.zeros(BUFFERSIZE, dtype=numpy.float32)
 
     def _reset(self):
-        self._t = 0.0
+        self._t = 0
         self._stop = False
         self._chunk = numpy.zeros(BUFFERSIZE, dtype=numpy.float32)
 
@@ -176,5 +176,28 @@ pa.terminate()
 {% endhighlight %}
 
 The real body of the class is in the next() function, which provide the value returned by the
-iterator. Next, I'll have to find a way to define a callback which returns the chunks of data in a
-way that pyAudio can understad. 
+iterator. Once we have the iterator, have an infinite play is a piece of cake. We can
+feed pyAudio chunk by chunk with a loop. The class definition is the same, but we call it in
+this way
+
+{% highlight python %}
+osc = SinOsc(440.0)
+
+pa = pyaudio.PyAudio()
+stream = pa.open(format=pyaudio.paFloat32,
+                 channels=1,
+                 rate=BITRATE,
+                 output=True)
+
+try:
+    for data in osc:
+        stream.write(data.tostring())
+except KeyboardInterrupt:
+    stream.stop_stream()
+    stream.close()
+    pa.terminate()
+    print('Audio terminated correctly')
+{% endhighlight %}
+
+This plays the sample indefinitely till we do not send an interrupt signal (CTRL-C on linux, for
+  example).
