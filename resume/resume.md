@@ -6,9 +6,8 @@ permalink: /resume/
 
 You can download my resume in different formats:
 
-[General purpose CV](https://www.dropbox.com/s/oy8tre9lokaoxjs/industry.pdf?dl=0)
+[General purpose CV](https://www.dropbox.com/s/256c9j0e5vf9d62/industry.pdf?dl=0)
 
-[Extended academic CV](https://www.dropbox.com/s/n23w6ybtdfm7iht/extended.pdf?dl=0)   
+[Extended academic CV](https://www.dropbox.com/s/24in2tqn1mriv1a/extended.pdf?dl=0)   
 
-[Compact academic CV](https://www.dropbox.com/s/kw9n5ygddkp1oek/compact.pdf?dl=0)  
-
+[Compact academic CV](https://www.dropbox.com/s/1ox3oimxv3vg1gv/compact.pdf?dl=0)  
