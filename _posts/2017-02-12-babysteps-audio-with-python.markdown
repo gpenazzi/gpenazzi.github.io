@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Python audio babysteps"
-date:   2016-10-13
+date:   2017-02-12
 categories: [python]
 tags: [python, audio, signalprocessing, pyaudio]
 ---
