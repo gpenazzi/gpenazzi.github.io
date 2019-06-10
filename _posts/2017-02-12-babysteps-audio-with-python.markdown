@@ -2,7 +2,7 @@
 layout: post
 title:  "Python audio babysteps"
 date:   2017-02-12
-categories: [python]
+categories: [python, programming]
 tags: [python, audio, signalprocessing, pyaudio]
 ---
 
