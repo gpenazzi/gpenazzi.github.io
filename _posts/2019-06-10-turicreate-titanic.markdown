@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A turicreate example on the titanic survivors dataset"
+title:  "Machine learning with turicreate: a small example using the titanic survivors dataset"
 date:   2019-06-10
 categories: [python, machine learning]
 tags: [machine learning, turicreate]
