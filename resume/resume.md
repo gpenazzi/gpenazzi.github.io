@@ -2,6 +2,7 @@
 layout: page
 title: Resume
 permalink: /resume/
+comments: false
 ---
 
 You can download my resume in 2 formats, a general purpose one and an academic versione which includes my publication list and relevant academic activities:
