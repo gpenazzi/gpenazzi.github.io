@@ -18,9 +18,11 @@ github_username:  gpenazzi
 bitbucket_username:  gpenazzi
 linkedin_username:  gpenazzi
 
-
 # Build settings
 markdown: kramdown
+
+plugins:
+    - jekyll-gist
 
 # Disqus Comments
 disqus:
